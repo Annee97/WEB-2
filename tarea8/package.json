@@ -1,0 +1,12 @@
+{
+  "name": "tarea8-servidor",
+  "version": "1.0.0",
+  "description": "Servidor de Node.js para la Tarea 8",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
