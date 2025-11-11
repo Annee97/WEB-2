@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="carrito.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Carrito de Compras</h1>
+
+
+        <h2>Productos</h2>
+        <div class="product-list">
+      
+            <div class="product-item">
+                <span>Camisa ($300.00)</span>
+                <button 
+                    class="button add-to-cart-btn" 
+                    data-name="Camisa" 
+                    data-price="300.00">
+                    Agregar
+                </button>
+            </div>
+            
+            <div class="product-item">
+                <span>Pantalón ($500.00)</span>
+                <button 
+                    class="button add-to-cart-btn" 
+                    data-name="Pantalón" 
+                    data-price="500.00">
+                    Agregar
+                </button>
+            </div>
+            
+            <div class="product-item">
+                <span>Zapatos ($800.00)</span>
+                <button 
+                    class="button add-to-cart-btn" 
+                    data-name="Zapatos" 
+                    data-price="800.00">
+                    Agregar
+                </button>
+            </div>
+            
+            <div class="product-item">
+                <span>Sombrero ($200.00)</span>
+                <button 
+                    class="button add-to-cart-btn" 
+                    data-name="Sombrero" 
+                    data-price="200.00">
+                    Agregar
+                </button>
+            </div>
+        </div>
+
+        
+        <h2>Tu Carrito</h2>
+        <div class="cart-section">
+            <ul id="cart-items">
+                <li>Tu carrito está vacío.</li>
+            </ul>
+            <h3 class="cart-total">Total: $<span id="cart-total">0.00</span></h3>
+            <button id="clear-cart-btn" class="button button-danger">Vaciar Carrito</button>
+        </div>
+
+        <a href="/" class="button-back">Volver al Inicio</a>
+    </div>
+</body>
+</html>
