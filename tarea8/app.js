@@ -1,0 +1,21 @@
+
+const express = require('express');
+const path = require('path');
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+
+app.use(express.static(path.join(__dirname, 'programas')));
+
+
+app.get('/', (req, res) => {
+
+  res.sendFile(path.join(__dirname, 'programas', 'index.html'));
+});
+
+
+app.listen(PORT, () => {
+  console.log(`¡Servidor escuchando en http://localhost:${PORT}`);
+  console.log('Presiona Ctrl+C para detener el servidor.');
+});
